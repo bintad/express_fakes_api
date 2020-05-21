@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Hello from Binta</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(const user of users){ %>
+                <tr>
+                    <td><%= user.firstName %> </td>
+                    <td><%= user.lastName %></td>
+                    <td><%= user.email %></td>
+                </tr>
+
+            <% }  %> 
+            
+        </tbody>
+    </table>
+    
+</body>
+</html>
